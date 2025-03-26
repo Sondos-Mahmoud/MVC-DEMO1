@@ -48,7 +48,7 @@ namespace MVC_DEMO1
                 //});
                 endpoints.MapControllerRoute(
                     name:"default",
-                    pattern:"{controller=Home}/{action=Index}/{id:int?}/{name:alpha}" 
+                    pattern:"{controller=Home}/{action=Index}/{id:int?}/{name:alpha?}" 
                     //defaults: new { controller = "Moivies" , action = "GetMovie" }
                     //constraints: new {id=new IntRouteConstraint}
                     );
