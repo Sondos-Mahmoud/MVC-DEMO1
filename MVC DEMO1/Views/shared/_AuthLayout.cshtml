@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+	<link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <center>
+            <nav class="mt-5">
+                <a href="/Home/Index" class="btn btn-primary m-2">Home</a>
+                <a href="/Home/Privacy" class="btn btn-warning m-2">Privacy</a>
+                <a href="/Home/AboutUs" class="btn btn-success m-2">About Us</a>
+                <a href="/Home/ContactUs" class="btn btn-secondary m-2">Contact Us</a>
+                <a href="/Home/SingIn" class="btn btn-info m-2">SingIn </a>
+                <a href="/Home/Register" class="btn btn-danger m-2">Register </a>
+
+
+            </nav>
+        </center>
+    </header>
+    <div class="justify-content-around align-items-center bg-info bg-opacity-25 m-5 p-5">
+        @RenderBody()
+    </div>
+</body>
+</html>
